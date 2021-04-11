@@ -5,3 +5,15 @@
 ## Sample users and roles (run sql command)
 
 > ./iniital_sql.sql
+
+## Data Source Configuration
+
+application.yml file in auth-server
+
+```
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/USERSERVICE?autoreconnect=true"
+    password: "sifre"
+    username: "root"
+```
